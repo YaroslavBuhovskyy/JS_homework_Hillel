@@ -26,9 +26,9 @@ let unitMeasurementTime = 'години';
 let unitMeasurementWeight = 'кілограми';
 
 let unitMeasurement = prompt('Введіть одиницю вимірювання:')
-if (unitMeasurement != unitMeasurementLength && unitMeasurementTime && unitMeasurementWeight) {
+/*if (unitMeasurement != unitMeasurementLength && unitMeasurementTime && unitMeasurementWeight) {
     console.log('Будь ласка введіть один із наведених варіантів: кілометри/години/кілограми')
-}
+}*/
 let inputQuantity = +prompt('Введіть кількість:')
 
 let kmToM = +inputQuantity * 1000;
@@ -44,6 +44,9 @@ switch (unitMeasurement) {
         break;
     case unitMeasurementWeight:
         console.log(+inputQuantity + ' кг. це ' + kgToG + ' грм.')
+        break;
+    default:
+        console.log('!Будь ласка введіть один із наведених варіантів: кілометри/години/кілограми')
         break;
 }
 
