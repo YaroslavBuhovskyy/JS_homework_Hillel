@@ -31,10 +31,10 @@ if (userAge <= 0) {
     console.log('Будь ласка, введіть число більше 0')
 }
 
-if (+lastNumber === 1 && userAge != 11) {
+if (+lastNumber === 1 && userAge != 11 && userAge != 111) {
     console.log(userAge + ' ' + 'рік');
 }
-else if (+lastNumber > 1 && +lastNumber < 5 && userAge != 12 && userAge != 13 && userAge != 14) {
+else if (+lastNumber > 1 && +lastNumber < 5 && userAge != 12 && userAge != 13 && userAge != 14 && userAge != 112 && userAge != 113 && userAge != 114) {
     console.log(userAge + ' ' + 'роки');
 }
 else {console.log(userAge + ' ' + 'років')}
