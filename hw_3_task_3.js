@@ -18,8 +18,8 @@ console.log(iDoPoweringOfNumber(2, 10));
 console.log(iDoPoweringOfNumber(5, 0));
 console.log(iDoPoweringOfNumber(99, 1));
 console.log(iDoPoweringOfNumber(0, 100));
-console.log(iDoPoweringOfNumber(-5, 2));
-console.log(iDoPoweringOfNumber(2, -3)); // повернутися до цього
+console.log(iDoPoweringOfNumber(-5, 2)); // повернутися до цього; має бути від'ємне
+console.log(iDoPoweringOfNumber(2, -3)); // повернутися до цього; має бути дробове
 
 //перевіряю дещо після уроку про примітиви і методи 
 console.log(iDoPoweringOfNumber(100, 100));
