@@ -42,8 +42,9 @@ function checkProbabilityTheory(count) {
 
     let evenPart = (evenNumbers / count) * 100;
     let oddPart = (oddNumbers / count) * 100;
-
-    let percentageRatioIs5050 = (evenPart - 50) <= 3 && (oddPart - 50) <= 3;
+    
+    //let percentageRatioIs5050 = (evenPart - 50) <= 3 && (oddPart - 50) <= 3; поправка, тут я не врахував від'ємні значення
+    let percentageRatioIs5050 = Math.abs(evenPart - 50) <= 3 && Math.abs(oddPart - 50) <= 3;
 
     return {evenNumbers, oddNumbers, evenPart, oddPart, percentageRatioIs5050};
 }
