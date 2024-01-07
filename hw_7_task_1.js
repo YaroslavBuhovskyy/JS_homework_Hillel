@@ -1,0 +1,13 @@
+let re = /^.*[^aA]{6,}/;
+let str1 = '12345';
+let str2 = './&\.+$';
+let str3 = '@bcdef';
+let str4 = 'bbbBB';
+let str5 = '12345A';
+let str6 = './a\.+';
+console.log(re.test(str1));
+console.log(re.test(str2));
+console.log(re.test(str3));
+console.log(re.test(str4));
+console.log(re.test(str5));
+console.log(re.test(str6));
