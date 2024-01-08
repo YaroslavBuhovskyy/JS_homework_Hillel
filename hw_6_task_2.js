@@ -41,8 +41,8 @@ function findValueByKey(companyName) {
             }
         ]
     };
-
-    function findCompanyInfo(object, name) {
+    
+function findCompanyInfo(object, name) {
         if (object.name.toLowerCase() === name.toLowerCase()) {
             return object;
         }
@@ -50,6 +50,15 @@ function findValueByKey(companyName) {
         if (object.clients) {
             for (let i = 0; i < object.clients.length; i++) {
                 const result = findCompanyInfo(object.clients[i], name);
+                if (result !== null) {
+                    return result;
+                }
+            }
+        }
+
+        if (object.partners) {
+            for (let i = 0; i < object.partners.length; i++) {
+                const result = findCompanyInfo(object.partners[i], name);
                 if (result !== null) {
                     return result;
                 }
@@ -74,3 +83,4 @@ console.log(companyInfo3);
 console.log(companyInfo4);
 console.log(companyInfo5);
 console.log(companyInfo6);
+
