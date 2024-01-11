@@ -42,7 +42,17 @@ var arr = [
 const re = /^[a-zA-Z0-9]+\.{0,1}[a-zA-Z0-9]+@(gmail|yahoo).com$/
 
 const result = arr.filter((item) => re.test(item.email));
-console.log(result);
+const res = result.map((item) => item.email);
+
+console.log(res);
+
+//map - створює новий масив, не трансформуючи вихідний
+/*var arr = [2, 4, 6, 8];
+var res = arr.map(function (v) {
+    return v * 10;
+});
+console.log(arr);
+console.log(res);*/
 
 //Фільтрація масиву
 /*var arr = [2, 8, 4, 12, 34, 3, 51];
